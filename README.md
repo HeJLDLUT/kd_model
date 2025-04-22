@@ -65,10 +65,6 @@ Integrates SMILES sequences, molecular graph structures, experimental conditions
 
 #### Output
 - Multimodal feature sets (*.npy):
-  - **Basic features**: feature_smiles.npy (serialized SMILES)
-  - **Graph structure features**: feature_moleculargraph.npy (atomic/bond features)
-  - **Combined features**:
-  - **Fingerprint fusion features**: Five fingerprints + experimental condition features
 
 ---
 
