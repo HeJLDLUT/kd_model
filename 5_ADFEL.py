@@ -405,13 +405,16 @@ if __name__ == "__main__":
     df_train, df_test, features = load_and_preprocess_data()
     
     # Load SHAP weights
-    print("Step 2: Loading SHAP weights...")
-    shap_weights = load_and_process_shap_weights()
+    #print("Step 2: Loading SHAP weights...")
+    #shap_weights = load_and_process_shap_weights()
     
     # Feature weighting
     print("Step 3: Applying SHAP weights to features...")
-    X_train = df_train[features].values * np.sqrt(shap_weights)
-    X_test = df_test[features].values * np.sqrt(shap_weights)
+    #X_train = df_train[features].values * np.sqrt(shap_weights)
+    #X_test = df_test[features].values * np.sqrt(shap_weights)
+
+    X_train = df_train[features].values
+    X_test = df_test[features].values
     
     # -------------------- Model Initialization --------------------
     print("Step 4: Initializing NSG evaluator...")
