@@ -93,19 +93,18 @@ Trains and optimizes regression models using XGBoost, including hyperparameter t
 ### 5_ADFEL.py
 
 #### Functionality
-ADFEL: Applicability Domain Feature-End Landscape characterization method.
+ADFRL: Application Domain Characterization Method Based on Feature-Endpoint Topography
+## Input
+    - Training data: train_data.csv
+    - Test data: test_data.csv
+    - Global parameters:
+      - a=25
+      - W_BINARY_PART = 0.5
 
-#### Input
-- Training data: train_data.csv
-- Testing data: test_data.csv
-- SHAP weights: shap_values.csv
-- Global parameter:
-  - a=5
-
-#### Output
-- Applicability domain metrics:
-  - AD_Metrics_a=5.csv
-  - Validation results in the result_AD/ directory (n, R2, ERMS, EMA)
+## Output
+    - Application domain metrics:
+      - AD_Metrics_a=25.csv
+      - Validation results in the result_AD/ directory
 
 ---
 
